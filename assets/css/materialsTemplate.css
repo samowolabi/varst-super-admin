@@ -1,0 +1,527 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary: #EF6C25;
+    --primary2: rgb(238, 65, 31);
+    --primaryFade: rgba(239, 108, 37, 0.08);
+    --primaryFade2: rgba(238, 66, 32, 0.08);
+    --green: rgb(49, 191, 110);
+    --greenFade: rgba(49, 191, 110, 0.15);
+    --yellow: rgb(245, 196, 0);
+    --yellowFade: rgba(245, 196, 0, 0.15);
+    --secondary: #030F40;
+    --light: #f4f4f4;
+    --white: #ffffff;
+    --grey: #68686a;
+    --black: #18253C;
+    --font-family: 'Poppins', sans-serif;
+}
+
+a, a:hover {
+    color: inherit;
+    text-decoration: none !important;
+}
+
+.grey-color {
+    color: var(--grey)
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orange-theme {
+    color: var(--primary);
+    background: var(--primaryFade);
+    padding: 4px 6px;
+}
+
+.orange-theme svg {
+    fill: var(--primary);
+}
+
+.red-theme {
+    color: var(--primary2);
+    background: var(--primaryFade2);
+    padding: 4px 6px;
+}
+
+.red-theme svg {
+    fill: var(--primary2);
+}
+
+.green-theme {
+    color: var(--green);
+    background: var(--greenFade);
+    padding: 4px 6px;
+}
+
+.green-theme svg {
+    fill: var(--green);   
+}
+
+.yellow-theme {
+    color: var(--yellow);
+    background: var(--yellowFade);   
+    padding: 4px 6px;
+}
+
+.yellow-theme svg {
+    fill: var(--yellow);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary2);
+}
+
+.btn-primary:active {
+    background-color: var(--primary2);
+}
+
+.twoItemsPerRow {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.twoItemsPerRow > div {
+    flex: 0 0 47%;
+    margin: 1rem 0;
+}
+
+.threeItemsPerRow {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.threeItemsPerRow > div {
+    flex: 0 0 33.333333%;
+    margin: 1.5rem 0;
+}
+
+body {
+    background: var(--light);
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.25rem 0;
+}
+
+h1 {
+    font-size: 1.95rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    letter-spacing: -0.85px;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.03rem;
+}
+
+h5 {
+    font-size: 0.85rem;
+}
+
+h6 {
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.showOnTablet, .showOnMobile {
+    display: none;
+}
+
+/* Main Body Right Centent */
+
+.mainBodyRightContainer {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.mainBodyRightDivCloseContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 13;
+    width: 100%;
+    height: inherit;
+    overflow-x: hidden;
+}
+
+.mainBodyRightContainer.active {
+    display: block;
+}
+
+.mainBodyRightDiv {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 14;
+    width: calc(100% / 1.32);
+    height: 100vh;
+    padding: 2rem 1.95rem;
+    background: var(--white);
+    box-shadow: 0 4px 15px rgb(112 144 176 / 5%);
+}
+
+.mainBodyRightDivTopBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.mainBodyRightDivTopBar svg {
+    fill: var(--primary);
+    margin-right: 0.65rem;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    padding: 0.15rem;
+}
+
+/* Tablet */
+@media only screen 
+and (min-width: 480px) 
+and (max-width: 1024px)  {
+    .mainBodyRightDiv {
+        width: calc(100% / 1.2);
+        height: 100vh;
+    }
+}
+
+/* Mobile Phones */
+@media only screen 
+and (min-width: 320px) 
+and (max-width: 480px) {
+    .mainBodyRightDiv {
+        width: calc(100% / 1.075);
+        height: 100vh;
+        padding: 2rem 0.95rem;
+    }
+    .mainBodyRightDivTopBar svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.materialTableContainer table th {
+    color: var(--black);
+    font-weight: 500 !important;
+    font-size: 0.82rem;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+    border: none !important;
+}
+
+.materialTableContainer table td {
+}
+
+.materialTableContainer table tbody td, .materialTableContainer {
+    font-size: 0.82rem;
+    color: var(--grey);
+    white-space: nowrap;
+}
+
+.materialButtonIcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dcdcdc;
+    background: #f3f3f3;
+    border-radius: 85px;
+    padding: 6px 25px;
+    padding-right: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    outline: 0 !important;
+}
+
+.materialButtonIcon span:first-child {
+    padding-right: 1rem;
+}
+
+.materialButtonIcon span.buttonIcon {
+    background: var(--primary);
+    border-radius: 50%;
+    white-space: nowrap;
+    padding: 0.45rem;
+}
+
+.materialButtonIcon svg {
+    stroke: var(--white);
+    stroke-width: 2.5;
+    padding: 0.1rem;
+}
+
+.materialButtonIcon.primary {
+    color: var(--white);
+    background: var(--primary);
+}
+
+.materialButtonIcon.primary span.buttonIcon {
+    color: var(--primary);
+    background: var(--white);
+}
+
+.materialButtonIcon.primary span.buttonIcon  svg {
+    stroke: var(--primary);
+    stroke-width: 2;
+}
+
+.materialButtonDropdown {
+    border: none !important;
+    outline: none !important;
+}
+
+.materialButtonDropdown button {
+    color: var(--primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 12px;
+    border: none !important;
+    outline: none !important;
+}
+
+.materialButtonDropdown .dropdown-menu {
+    font-size: 0.8rem;
+    background: var(--white);
+    box-shadow: 2px 4px 14px 0 rgb(31 38 135 / 8%);
+    border-radius: 10px;
+}
+
+.materialButtonDropdown button:hover {
+    color: var(--primary2);
+}
+
+.materialTabButton {
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+.materialTabButton .nav-link {
+    font-size: 0.87rem;
+    font-weight: 400;
+    padding: 1.1rem 1rem;
+    background-color: #e8e8e8;
+    transition: 0.35s;
+}
+
+.materialTabButton .nav-item:first-child {
+    border-radius: 22px 0 0 22px;
+}
+
+.materialTabButton .nav-item:last-child {
+    border-radius: 0 22px 22px 0;
+}
+
+.materialTabButton .nav-link:hover {
+    opacity: 0.7;
+}
+
+.materialTabButton .nav-link.active {
+    color: var(--primary);
+    background: var(--primaryFade);
+    font-weight: 500;
+}
+
+.materialTabButton .nav-link svg {
+    stroke: var(--grey);
+    width: 21px;
+    stroke-width: 2;
+    margin-right: 0.5rem;
+}
+
+.materialTabButton .nav-link.active svg {
+    stroke: var(--primary);
+}
+
+.materialCardForm input, .materialCardForm select {
+    color: var(--black);
+    outline: none;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid #cccccc;
+    margin: 1rem 0;
+}
+
+.materialCardForm input[type='submit'] {
+    color: var(--white);
+    width: 180px;
+    border-radius: 13.5px;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    outline: 0 !important;
+    border: none !important;
+    background: rgb(239,108,37);
+    background: -moz-linear-gradient(61deg, var(--primary) 31%, var(--primary2) 86%);
+    background: -webkit-linear-gradient(61deg, var(--primary) 31%, var(--primary2) 86%);
+    background: linear-gradient(61deg, var(--primary) 31%, var(--primary2) 86%);
+    transition: 0.25s;
+}
+
+.materialCardForm input[type='submit']:hover {
+    opacity: 0.87;
+}
+
+.materialModalContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 8;
+}
+
+.materialModalContainer.active {
+    display: flex;
+}
+
+.materialModalDiv {
+    width: 480px;
+    max-width: 480px;
+    padding: 1.8rem 1.5rem;
+    background: var(--white);
+    box-shadow: 1px 15px 41px 0px rgba(112,144,176,0.065);
+    -webkit-box-shadow: 1px 15px 41px 0px rgba(112,144,176,0.065);
+    -moz-box-shadow: 1px 15px 41px 0px rgba(112,144,176,0.065);
+}
+
+.materialModalHeader {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.materialModalHeader svg {
+    stroke: var(--black);
+    stroke-width: 1.5;
+    width: 15px;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.materialModalHeader svg:hover {
+    opacity: 0.25;
+}
+
+select.multipleDropdown {
+    font-family: var(--font-family) !important;
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+    margin: 0;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: 1px solid #cccccc;
+    padding: 0.8rem 1rem;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: 1px solid var(--black);
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    color: var(--white);
+    border: 1px solid var(--primary);
+    background: var(--primary);
+    margin: 0.2rem 0.35rem;
+    border-radius: 4.5px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+    font-weight: 300;
+    font-size: 13.5px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: var(--white);
+    border: none;
+    font-weight: 300;
+    padding: 1.5px 5px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+    background-color: var(--primaryFade);
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    color: var(--primary);
+    background: var(--primaryFade);
+}
+
+.select2-results__option--selectable {
+    cursor: pointer;
+    font-size: 0.87rem;
+    padding: 0.65rem;
+    margin: 0.2rem 0;
+    font-weight: 400;
+}
+
+.select2-container--default .select2-results__option--selected {
+    background-color: var(--primaryFade);
+}
+
+
+/* Tablet */
+@media only screen 
+and (min-width: 480px) 
+and (max-width: 1024px)  {
+    .showOnTablet {
+        display: block;
+    }
+}
+
+/* Mobile Phones */
+@media only screen 
+and (min-width: 320px) 
+and (max-width: 480px) {
+    .showOnMobile {
+        display: block;
+    }
+    .reportRangePicker {
+        padding: 12px 17.5px;
+    }
+}
+

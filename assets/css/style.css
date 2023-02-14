@@ -1,0 +1,366 @@
+.gridContainer {
+    padding: 0 3rem;
+}
+
+.titleWithDateDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+}
+
+.reportRangePicker {
+    color: var(--primary);
+    cursor: pointer;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 80px;
+    border: 1px solid var(--primary);
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 0.75rem;
+}
+
+.reportRangePicker svg {
+    fill: var(--primary);
+    width: 20px;
+    margin-right: 15px;
+}
+
+.reportRangePicker .daterangepicker .ranges li.active {
+    background-color: var(--primary);
+}
+
+.materialCard {
+    color: var(--black);
+    padding: 1.25rem 0.5rem;
+    background: var(--white);
+    border: 0.95px solid #e7e4e4;
+    border-radius: 22px;
+    box-shadow: 0 8px 45px rgb(112 144 176 / 3%);
+}
+
+.materialCard .materialCardTitle {
+    /* border-bottom: 1.2px solid rgba(127, 128, 176, 0.2); */
+    padding: 0.5rem 0;
+    margin-bottom: 0.3rem;
+}
+
+.sideBarNavContainer {
+    width: 320px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 1.2rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    z-index: 5;
+}
+
+.sideBarNavContainer .materialCard {
+    padding: 1.25rem 1.15rem;
+}
+
+.sideBarNavContainer.active {
+    width: 320px;
+    left: 0;
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+}
+
+.sideBarNavHeader {
+    padding: 1rem;
+}
+
+.sideBarNavHeader img {
+    width: 120px;
+}
+
+.sideBarNavHeader svg {
+    fill: var(--grey);
+    width: 20px;
+    float: right;
+}
+
+.sideBarNavContainer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sideBarNavContainer li {
+    padding: 0.875rem 1.2rem;
+    margin: 12px 0;
+    font-weight: 400;
+}
+
+.sideBarNavContainer li.active {
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 13.5px;
+    background: rgb(239,108,37);
+    background: -moz-linear-gradient(61deg, var(--primary) 31%, var(--primary2) 86%);
+    background: -webkit-linear-gradient(61deg, var(--primary) 31%, var(--primary2) 86%);
+    background: linear-gradient(61deg, var(--primary) 31%, var(--primary2) 86%);
+}
+
+.sideBarNavContainer li svg {
+    stroke: var(--grey);
+    width: 19px;
+    stroke-width: 1.85;
+    margin-right: 8px;
+}
+
+.sideBarNavContainer li.active svg {
+    stroke: var(--white);
+    stroke-width: 2.35;
+}
+
+.mainBarNavContainer {
+    width: 100%;
+    padding: 0.85rem;
+}
+
+.mainBarNavDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.85rem 2.5rem;
+    margin-left: 330px;
+}
+
+.mainBarNavDiv.active {
+    filter: blur(3.5px);
+    opacity: 0.35;
+}
+
+.mainBarNavDiv .mainBarNavProfile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mainBarNavDiv .mainBarNavProfile img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.mainBarNavDiv .mainBarNavProfile svg {
+    margin-left: 0;
+    margin-right: 1.3rem;
+}
+
+.mainBarNavDiv svg {
+    stroke-width: 1.5;
+    stroke: var(--grey);
+    margin-left: 1.1rem;
+    cursor: pointer;
+    transition: 0.65s;
+}
+
+.mainBarNavDiv svg:active {
+    background: #e7e7e7;
+}
+
+.mainBarNavDiv svg.settings:hover {
+    transform: rotate(120deg);
+}
+
+.mainBarNavDiv svg.notification:hover {
+    animation-name: ringAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ringAnimation {
+    0% { transform: rotate(0deg); }
+    30% { transform: rotate(-60deg); }
+    60% { transform: rotate(60deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.mainBodyContainer {
+    margin-top: 2rem;
+    margin-left: 330px;
+}
+
+.mainBodyContainer.active {
+    filter: blur(3.5px);
+    opacity: 0.35;
+}
+
+.dashboardSummary .materialCard {
+    padding: 2rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.dashboardSummary .dashboardSummaryCount span {
+    padding: 0.3rem 0.75rem;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.dashboardSummary .dashboardSummaryCount span svg {
+    width: 22px;
+}
+
+.materialListPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.materialListPanel img {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.materialListPanelBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notificationTable tbody tr {
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+.notificationTable tbody tr:hover {
+    background-color: var(--light);
+}
+
+.notificationTable tbody tr:hover td:first-child {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.notificationTable .message {
+    display: inline-block;
+    white-space: nowrap; 
+    width: 600px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notificationTable svg {
+    fill: var(--primary);
+    width: 18.5px;
+    padding-bottom: 0.25rem;
+    cursor: pointer;
+    transition: opacity 0.35s;
+    margin: 0 0.35rem;
+}
+
+.notificationTable svg:hover {
+    opacity: 0.6;
+}
+
+.profileDashboard {
+    color: var(--white);
+    margin-bottom: 50px;
+}
+
+.profileDashboard .profileDashboardBanner {
+    width: 100%;
+    height: 130px;
+    background: linear-gradient(to top, #00000081, #0a0a0a70), url(../img/user.png) no-repeat left center;
+    background-size: cover;
+}
+
+.profileDashboard .profileDashboardPhoto {
+    position: relative;
+    left: 20px;
+    top: 80px;
+}
+
+.profileDashboard .profileDashboardPhoto img {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.profileDashboard .profileDashboardContent {
+    position: relative;
+    bottom: 50px;
+    text-align: right;
+    padding: 0 2.5rem;
+}
+
+.addNewAggregator input {
+    margin: 0;
+}
+
+
+
+
+/* Tablet And Mobile Phones */
+@media only screen 
+and (min-width: 320px) 
+and (max-width: 1024px) {
+    .gridContainer {
+        padding: 0 0.15rem;
+    }
+    .sideBarNavContainer {
+        width: 0;
+        left: -50%;
+        transition: 0.35s;
+    }
+    .mainBodyContainer {
+        margin-left: 0;
+    }
+    .mainBarNavContainer {
+        width: 100%;
+        padding: 0.25rem;
+    }
+    .mainBarNavDiv {
+        margin-left: 0;
+        padding: 1.85rem 1.5rem;
+    }
+    .dashboardSummary .materialCard {
+        padding: 2rem 1.5rem;
+        margin: 0.5rem 0;
+    }
+}
+
+
+/* Transaction Page */
+.transactionSummary {
+    padding-left: 2rem;
+}
+
+
+/* Tablet */
+@media only screen 
+and (min-width: 480px) 
+and (max-width: 1024px)  {
+    .sideBarNavContainer.active {
+        width: 370px;
+    }
+}
+
+/* Mobile Phones */
+@media only screen 
+and (min-width: 320px) 
+and (max-width: 480px) {
+    .sideBarNavContainer.active {
+        width: 350px;
+    }
+    .reportRangePicker{
+        padding: 10px 12px;
+    }
+    .transactionSummary {
+        padding-left: 0;
+        padding-top: 1.5rem;
+    }
+}
