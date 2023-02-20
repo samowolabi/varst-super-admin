@@ -364,3 +364,9 @@ and (max-width: 480px) {
         padding-top: 1.5rem;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter {
+        text-align: left;
+    }
+}

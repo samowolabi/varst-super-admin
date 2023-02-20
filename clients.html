@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/img/verdant-icon.png">
-    <title>Verdant Admin Dashboard</title>
+    <title>Clients - Verdant Admin Dashboard</title>
     <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/materialsTemplate.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/daterangepicker.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -27,7 +26,7 @@
                 </div>
                 <ul>
                     <a href="index.html">
-                        <li class="active">
+                        <li>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 16.5H11C10.17 16.5 9.5 17.17 9.5 18V21.5H14.5V18C14.5 17.17 13.83 16.5 13 16.5Z" stroke-miterlimit="10" stroke-linejoin="round"/><path d="M10.0698 2.81997L3.13978 8.36997C2.35978 8.98997 1.85978 10.3 2.02978 11.28L3.35978 19.24C3.59978 20.66 4.95978 21.81 6.39978 21.81H17.5998C19.0298 21.81 20.3998 20.65 20.6398 19.24L21.9698 11.28C22.1298 10.3 21.6298 8.98997 20.8598 8.36997L13.9298 2.82997C12.8598 1.96997 11.1298 1.96997 10.0698 2.81997Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             <span>Home</span>
                         </li>
@@ -45,7 +44,7 @@
                         </li>
                     </a>
                     <a href="clients.html">
-                        <li>
+                        <li class="active">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 7.16C17.94 7.15 17.87 7.15 17.81 7.16C16.43 7.11 15.33 5.98 15.33 4.58C15.33 3.15 16.48 2 17.91 2C19.34 2 20.49 3.16 20.49 4.58C20.48 5.98 19.38 7.11 18 7.16Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.9699 14.44C18.3399 14.67 19.8499 14.43 20.9099 13.72C22.3199 12.78 22.3199 11.24 20.9099 10.3C19.8399 9.59004 18.3099 9.35003 16.9399 9.59003" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.96998 7.16C6.02998 7.15 6.09998 7.15 6.15998 7.16C7.53998 7.11 8.63998 5.98 8.63998 4.58C8.63998 3.15 7.48998 2 6.05998 2C4.62998 2 3.47998 3.16 3.47998 4.58C3.48998 5.98 4.58998 7.11 5.96998 7.16Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.99994 14.44C5.62994 14.67 4.11994 14.43 3.05994 13.72C1.64994 12.78 1.64994 11.24 3.05994 10.3C4.12994 9.59004 5.65994 9.35003 7.02994 9.59003" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 14.63C11.94 14.62 11.87 14.62 11.81 14.63C10.43 14.58 9.32996 13.45 9.32996 12.05C9.32996 10.62 10.48 9.46997 11.91 9.46997C13.34 9.46997 14.49 10.63 14.49 12.05C14.48 13.45 13.38 14.59 12 14.63Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.08997 17.78C7.67997 18.72 7.67997 20.26 9.08997 21.2C10.69 22.27 13.31 22.27 14.91 21.2C16.32 20.26 16.32 18.72 14.91 17.78C13.32 16.72 10.69 16.72 9.08997 17.78Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             <span>Clients</span>
                         </li>
@@ -109,7 +108,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section>        
 
         <section class="mainBarNavContainer">
             <div class="materialCard mainBarNavDiv">
@@ -128,6 +127,10 @@
         </section>
 
         <section class="mainBodyContainer">
+            <div class="container">
+                
+            </div>
+
             <div class="container-fluid dashboardSummary">
                 <div class="row">
                     <div class="col-sm-12">
@@ -150,446 +153,139 @@
                 <div class="row mb-4">
                     <div class="col-sm-6 col-lg-4">
                         <div class="materialCard">
-                            <h6 class="grey-color">Total Transaction</h6>
+                            <h6 class="grey-color">Total Clients</h6>
                             <div class="dashboardSummaryCount flex-between">
-                                <h2>$100,000</h2>
+                                <h2>100</h2>
                                 <span class="orange-theme">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.6806 13.9783L15.4706 10.7683L13.5106 8.79828C12.6806 7.96828 11.3306 7.96828 10.5006 8.79828L5.32056 13.9783C4.64056 14.6583 5.13056 15.8183 6.08056 15.8183H11.6906H17.9206C18.8806 15.8183 19.3606 14.6583 18.6806 13.9783Z"/></svg>
-                                    2000
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.16006 10.87C9.06006 10.86 8.94006 10.86 8.83006 10.87C6.45006 10.79 4.56006 8.84 4.56006 6.44C4.56006 3.99 6.54006 2 9.00006 2C11.4501 2 13.4401 3.99 13.4401 6.44C13.4301 8.84 11.5401 10.79 9.16006 10.87Z" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.41 4C18.35 4 19.91 5.57 19.91 7.5C19.91 9.39 18.41 10.93 16.54 11C16.46 10.99 16.37 10.99 16.28 11" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.15997 14.56C1.73997 16.18 1.73997 18.82 4.15997 20.43C6.90997 22.27 11.42 22.27 14.17 20.43C16.59 18.81 16.59 16.17 14.17 14.56C11.43 12.73 6.91997 12.73 4.15997 14.56Z" stroke-linecap="round" stroke-linejoin="round"></path><path d="M18.3401 20C19.0601 19.85 19.7401 19.56 20.3001 19.13C21.8601 17.96 21.8601 16.03 20.3001 14.86C19.7501 14.44 19.0801 14.16 18.3701 14" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                                 </span>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">
                         <div class="materialCard">
-                            <h6 class="grey-color">Successful Transaction</h6>
+                            <h6 class="grey-color">Active Clients</h6>
                             <div class="dashboardSummaryCount flex-between">
-                                <h2>$90,000</h2>
+                                <h2>76</h2>
                                 <span class="green-theme">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.6806 13.9783L15.4706 10.7683L13.5106 8.79828C12.6806 7.96828 11.3306 7.96828 10.5006 8.79828L5.32056 13.9783C4.64056 14.6583 5.13056 15.8183 6.08056 15.8183H11.6906H17.9206C18.8806 15.8183 19.3606 14.6583 18.6806 13.9783Z"/></svg>
-                                    1700
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.16006 10.87C9.06006 10.86 8.94006 10.86 8.83006 10.87C6.45006 10.79 4.56006 8.84 4.56006 6.44C4.56006 3.99 6.54006 2 9.00006 2C11.4501 2 13.4401 3.99 13.4401 6.44C13.4301 8.84 11.5401 10.79 9.16006 10.87Z" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.41 4C18.35 4 19.91 5.57 19.91 7.5C19.91 9.39 18.41 10.93 16.54 11C16.46 10.99 16.37 10.99 16.28 11" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.15997 14.56C1.73997 16.18 1.73997 18.82 4.15997 20.43C6.90997 22.27 11.42 22.27 14.17 20.43C16.59 18.81 16.59 16.17 14.17 14.56C11.43 12.73 6.91997 12.73 4.15997 14.56Z" stroke-linecap="round" stroke-linejoin="round"></path><path d="M18.3401 20C19.0601 19.85 19.7401 19.56 20.3001 19.13C21.8601 17.96 21.8601 16.03 20.3001 14.86C19.7501 14.44 19.0801 14.16 18.3701 14" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                                 </span>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">
                         <div class="materialCard">
-                            <h6 class="grey-color">Failed Transaction</h6>
+                            <h6 class="grey-color">Inactive Clients</h6>
                             <div class="dashboardSummaryCount flex-between">
-                                <h2>$10,000</h2>
+                                <h2>24</h2>
                                 <span class="red-theme">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.9188 8.17969H11.6888H6.07877C5.11877 8.17969 4.63877 9.33969 5.31877 10.0197L10.4988 15.1997C11.3288 16.0297 12.6788 16.0297 13.5088 15.1997L15.4788 13.2297L18.6888 10.0197C19.3588 9.33969 18.8788 8.17969 17.9188 8.17969Z"/></svg>
-                                    300
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.16006 10.87C9.06006 10.86 8.94006 10.86 8.83006 10.87C6.45006 10.79 4.56006 8.84 4.56006 6.44C4.56006 3.99 6.54006 2 9.00006 2C11.4501 2 13.4401 3.99 13.4401 6.44C13.4301 8.84 11.5401 10.79 9.16006 10.87Z" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.41 4C18.35 4 19.91 5.57 19.91 7.5C19.91 9.39 18.41 10.93 16.54 11C16.46 10.99 16.37 10.99 16.28 11" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.15997 14.56C1.73997 16.18 1.73997 18.82 4.15997 20.43C6.90997 22.27 11.42 22.27 14.17 20.43C16.59 18.81 16.59 16.17 14.17 14.56C11.43 12.73 6.91997 12.73 4.15997 14.56Z" stroke-linecap="round" stroke-linejoin="round"></path><path d="M18.3401 20C19.0601 19.85 19.7401 19.56 20.3001 19.13C21.8601 17.96 21.8601 16.03 20.3001 14.86C19.7501 14.44 19.0801 14.16 18.3701 14" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                                 </span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="materialCard">
-                            <h6 class="grey-color">Refunded Transaction</h6>
-                            <div class="dashboardSummaryCount flex-between">
-                                <h2>$20,000</h2>
-                                <span class="green-theme">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.9188 8.17969H11.6888H6.07877C5.11877 8.17969 4.63877 9.33969 5.31877 10.0197L10.4988 15.1997C11.3288 16.0297 12.6788 16.0297 13.5088 15.1997L15.4788 13.2297L18.6888 10.0197C19.3588 9.33969 18.8788 8.17969 17.9188 8.17969Z"/></svg>
-                                    10
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="materialCard">
-                            <h6 class="grey-color">Pending Transaction</h6>
-                            <div class="dashboardSummaryCount flex-between">
-                                <h2>$10,000</h2>
-                                <span class="yellow-theme">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.9188 8.17969H11.6888H6.07877C5.11877 8.17969 4.63877 9.33969 5.31877 10.0197L10.4988 15.1997C11.3288 16.0297 12.6788 16.0297 13.5088 15.1997L15.4788 13.2297L18.6888 10.0197C19.3588 9.33969 18.8788 8.17969 17.9188 8.17969Z"/></svg>
-                                    34
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="materialCard">
-                            <h6 class="grey-color">Failed Transaction</h6>
-                            <div class="dashboardSummaryCount flex-between">
-                                <h2>$5,000</h2> 
-                                <span class="red-theme">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.9188 8.17969H11.6888H6.07877C5.11877 8.17969 4.63877 9.33969 5.31877 10.0197L10.4988 15.1997C11.3288 16.0297 12.6788 16.0297 13.5088 15.1997L15.4788 13.2297L18.6888 10.0197C19.3588 9.33969 18.8788 8.17969 17.9188 8.17969Z"/></svg>
-                                    5
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-12 col-lg-8">
-                        <div class="materialCard mt-5">
-                            <div class="materialCardTitle">
-                                <div class="materialCardInline">
-                                    <div>
-                                        <h4>Transactions</h4>
-                                        <!--<h6 class="headingH6">Payouts Rate</h6>-->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="transactionChart"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-12 col-lg-4">
-                        <div class="materialCard mt-5">
-                            <div class="materialCardTitle">
-                                <div class="materialCardInline">
-                                    <div>
-                                        <h4>New Customers</h4>
-                                        <!--<h6 class="headingH6">Payouts Rate</h6>-->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="materialListPanel">
-                                <div class="materialListPanelBody">
-                                    <div>
-                                        <img src="assets/img/user.png" alt="">
-                                    </div>
-                                    <div>
-                                        <h5>Victor Eben</h5>
-                                        <h6 class="grey-color">Lekki</h6>
-                                    </div>
-                                </div>
-                                <div><h6 class="green-theme">May 6</h6></div>
-                            </div>
-                            <div class="materialListPanel">
-                                <div class="materialListPanelBody">
-                                    <div>
-                                        <img src="assets/img/user2.png" alt="">
-                                    </div>
-                                    <div>
-                                        <h5>Samuel Owolabi</h5>
-                                        <h6 class="grey-color">Ikeja</h6>
-                                    </div>
-                                </div>
-                                <div><h6 class="green-theme">May 6</h6></div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="materialCard materialTableContainer mt-5">
-                            
-                            <div style="display: flex; justify-content: flex-end;">
-                                <div class="btn-group materialButtonDropdown">
-                                    <button type="button" class="btn orange-theme btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Download
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item csvExport" href="javascript:void(0)">Download CSV</a>
-                                        <a class="dropdown-item pdfExport" href="javascript:void(0)">Download PDF</a>
-                                        <a class="dropdown-item jsonExport" href="javascript:void(0)">Download JSON</a>
+                            <div class="materialCardTitle">
+                                <div class="materialCardInline">
+                                    <div>
+                                        <h4>Clients</h4>
+                                        <!--<h6 class="headingH6">Payouts Rate</h6>-->
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="flex-between" style="flex-wrap: wrap;">
-                                <div style="width: 40%;">
-                                    <h4>Transactions</h4>
-                                </div>
-                                <div class="materialCardForm" style="width: 60%;">
-                                    <div class="twoItemsPerRow">
-                                        <div>
-                                            <select style="border: none; background: #f3f5f7;">
-                                                <option value="" selected disabled>Transactions</option>
-                                                <option value="">All</option>
-                                                <option value="Withdrawal">Withdrawal</option>
-                                                <option value="Transfer">Transfer</option>
-                                                <option value="Bills">Bills</option>
-                                            </select>
-                                        </div>
-                                        <div>
-                                            <select style="border: none; background: #f3f5f7;">
-                                                <option value="" selected disabled>Status</option>
-                                                <option value="">All</option>
-                                                <option value="Success">Success</option>
-                                                <option value="Failed">Failed</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="table-responsive">
-                                <table class="table table-borderless dataTable">
+                                <table class="table table-borderless">
                                     <thead>
                                         <tr>
+                                            <th scope="col">Action</th>
                                             <th scope="col">User</th>
-                                            <th scope="col">Reference</th>
-                                            <th scope="col">Description</th>
-                                            <th scope="col">Amount</th>
-                                            <th scope="col">Fees</th>
-                                            <th scope="col">Type</th>
-                                            <th scope="col">TCID</th>
-                                            <th scope="col">Status</th>
+                                            <th scope="col">Phone No</th>
+                                            <th scope="col">State</th>
+                                            <th scope="col">LGA</th>
+                                            <th scope="col">Terminal Status</th>
+                                            <th scope="col">User Status</th>
                                             <th scope="col">Date</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <td>
+                                                <a href="clients-single.html">
+                                                    <svg fill="#EF6C25" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.25 9.14969C18.94 5.51969 15.56 3.42969 12 3.42969C10.22 3.42969 8.49 3.94969 6.91 4.91969C5.33 5.89969 3.91 7.32969 2.75 9.14969C1.75 10.7197 1.75 13.2697 2.75 14.8397C5.06 18.4797 8.44 20.5597 12 20.5597C13.78 20.5597 15.51 20.0397 17.09 19.0697C18.67 18.0897 20.09 16.6597 21.25 14.8397C22.25 13.2797 22.25 10.7197 21.25 9.14969ZM12 16.0397C9.76 16.0397 7.96 14.2297 7.96 11.9997C7.96 9.76969 9.76 7.95969 12 7.95969C14.24 7.95969 16.04 9.76969 16.04 11.9997C16.04 14.2297 14.24 16.0397 12 16.0397Z"/><path d="M11.9984 9.14062C10.4284 9.14062 9.14844 10.4206 9.14844 12.0006C9.14844 13.5706 10.4284 14.8506 11.9984 14.8506C13.5684 14.8506 14.8584 13.5706 14.8584 12.0006C14.8584 10.4306 13.5684 9.14062 11.9984 9.14062Z"/></svg>
+                                                    <span style="font-weight: 600;">View</span>
+                                                </a>
+                                            </td>
                                             <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Witddrawal</td>
-                                            <td>12C4</td>
-                                            <td>Success</td>
-                                            <td>May 2</td>
+                                            <td>08034111111</td>
+                                            <td>Lagos</td>
+                                            <td>Ikeja</td>
+                                            <td>Mapped</td>
+                                            <td>Active</td>
+                                            <td>May 2, 2022</td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <a href="clients-single.html">
+                                                    <svg fill="#EF6C25" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.25 9.14969C18.94 5.51969 15.56 3.42969 12 3.42969C10.22 3.42969 8.49 3.94969 6.91 4.91969C5.33 5.89969 3.91 7.32969 2.75 9.14969C1.75 10.7197 1.75 13.2697 2.75 14.8397C5.06 18.4797 8.44 20.5597 12 20.5597C13.78 20.5597 15.51 20.0397 17.09 19.0697C18.67 18.0897 20.09 16.6597 21.25 14.8397C22.25 13.2797 22.25 10.7197 21.25 9.14969ZM12 16.0397C9.76 16.0397 7.96 14.2297 7.96 11.9997C7.96 9.76969 9.76 7.95969 12 7.95969C14.24 7.95969 16.04 9.76969 16.04 11.9997C16.04 14.2297 14.24 16.0397 12 16.0397Z"/><path d="M11.9984 9.14062C10.4284 9.14062 9.14844 10.4206 9.14844 12.0006C9.14844 13.5706 10.4284 14.8506 11.9984 14.8506C13.5684 14.8506 14.8584 13.5706 14.8584 12.0006C14.8584 10.4306 13.5684 9.14062 11.9984 9.14062Z"/></svg>
+                                                    <span style="font-weight: 600;">View</span>
+                                                </a>
+                                            </td>
                                             <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Transfer</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
+                                            <td>08034111111</td>
+                                            <td>Lagos</td>
+                                            <td>Ikeja</td>
+                                            <td>Mapped</td>
+                                            <td>Active</td>
+                                            <td>May 2, 2022</td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <a href="clients-single.html">
+                                                    <svg fill="#EF6C25" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.25 9.14969C18.94 5.51969 15.56 3.42969 12 3.42969C10.22 3.42969 8.49 3.94969 6.91 4.91969C5.33 5.89969 3.91 7.32969 2.75 9.14969C1.75 10.7197 1.75 13.2697 2.75 14.8397C5.06 18.4797 8.44 20.5597 12 20.5597C13.78 20.5597 15.51 20.0397 17.09 19.0697C18.67 18.0897 20.09 16.6597 21.25 14.8397C22.25 13.2797 22.25 10.7197 21.25 9.14969ZM12 16.0397C9.76 16.0397 7.96 14.2297 7.96 11.9997C7.96 9.76969 9.76 7.95969 12 7.95969C14.24 7.95969 16.04 9.76969 16.04 11.9997C16.04 14.2297 14.24 16.0397 12 16.0397Z"/><path d="M11.9984 9.14062C10.4284 9.14062 9.14844 10.4206 9.14844 12.0006C9.14844 13.5706 10.4284 14.8506 11.9984 14.8506C13.5684 14.8506 14.8584 13.5706 14.8584 12.0006C14.8584 10.4306 13.5684 9.14062 11.9984 9.14062Z"/></svg>
+                                                    <span style="font-weight: 600;">View</span>
+                                                </a>
+                                            </td>
                                             <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>P2P</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
+                                            <td>08034111111</td>
+                                            <td>Lagos</td>
+                                            <td>Ikeja</td>
+                                            <td>Mapped</td>
+                                            <td>Active</td>
+                                            <td>May 2, 2022</td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <a href="clients-single.html">
+                                                    <svg fill="#EF6C25" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.25 9.14969C18.94 5.51969 15.56 3.42969 12 3.42969C10.22 3.42969 8.49 3.94969 6.91 4.91969C5.33 5.89969 3.91 7.32969 2.75 9.14969C1.75 10.7197 1.75 13.2697 2.75 14.8397C5.06 18.4797 8.44 20.5597 12 20.5597C13.78 20.5597 15.51 20.0397 17.09 19.0697C18.67 18.0897 20.09 16.6597 21.25 14.8397C22.25 13.2797 22.25 10.7197 21.25 9.14969ZM12 16.0397C9.76 16.0397 7.96 14.2297 7.96 11.9997C7.96 9.76969 9.76 7.95969 12 7.95969C14.24 7.95969 16.04 9.76969 16.04 11.9997C16.04 14.2297 14.24 16.0397 12 16.0397Z"/><path d="M11.9984 9.14062C10.4284 9.14062 9.14844 10.4206 9.14844 12.0006C9.14844 13.5706 10.4284 14.8506 11.9984 14.8506C13.5684 14.8506 14.8584 13.5706 14.8584 12.0006C14.8584 10.4306 13.5684 9.14062 11.9984 9.14062Z"/></svg>
+                                                    <span style="font-weight: 600;">View</span>
+                                                </a>
+                                            </td>
                                             <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>P2P</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
+                                            <td>08034111111</td>
+                                            <td>Lagos</td>
+                                            <td>Ikeja</td>
+                                            <td>Mapped</td>
+                                            <td>Active</td>
+                                            <td>May 2, 2022</td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <a href="clients-single.html">
+                                                    <svg fill="#EF6C25" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.25 9.14969C18.94 5.51969 15.56 3.42969 12 3.42969C10.22 3.42969 8.49 3.94969 6.91 4.91969C5.33 5.89969 3.91 7.32969 2.75 9.14969C1.75 10.7197 1.75 13.2697 2.75 14.8397C5.06 18.4797 8.44 20.5597 12 20.5597C13.78 20.5597 15.51 20.0397 17.09 19.0697C18.67 18.0897 20.09 16.6597 21.25 14.8397C22.25 13.2797 22.25 10.7197 21.25 9.14969ZM12 16.0397C9.76 16.0397 7.96 14.2297 7.96 11.9997C7.96 9.76969 9.76 7.95969 12 7.95969C14.24 7.95969 16.04 9.76969 16.04 11.9997C16.04 14.2297 14.24 16.0397 12 16.0397Z"/><path d="M11.9984 9.14062C10.4284 9.14062 9.14844 10.4206 9.14844 12.0006C9.14844 13.5706 10.4284 14.8506 11.9984 14.8506C13.5684 14.8506 14.8584 13.5706 14.8584 12.0006C14.8584 10.4306 13.5684 9.14062 11.9984 9.14062Z"/></svg>
+                                                    <span style="font-weight: 600;">View</span>
+                                                </a>
+                                            </td>
                                             <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Bills Payment</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Bills Payment</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Bills Payment</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>P2P</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Withdrawal</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Withdrawal</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Withdrawal</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Withdrawal</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Withdrawal</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Withdrawal</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Withdrawal</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Withdrawal</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Withdrawal</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Withdrawal</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Withdrawal</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Withdrawal</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Withdrawal</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Withdrawal</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victor O.</td>
-                                            <td>2243434322</td>
-                                            <td>To Eben</td>
-                                            <td>15000</td>
-                                            <td>100</td>
-                                            <td>Withdrawal</td>
-                                            <td>12C4</td>
-                                            <td>Failed</td>
-                                            <td>May 2</td>
+                                            <td>08034111111</td>
+                                            <td>Lagos</td>
+                                            <td>Ikeja</td>
+                                            <td>Mapped</td>
+                                            <td>Active</td>
+                                            <td>May 2, 2022</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -602,29 +298,9 @@
     </div>
     <script src="assets/js/apexcharts.js"></script>
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/moment.min.js"></script>
     <script src="assets/js/daterangepicker.min.js"></script>
-    <script src="assets/js/jquery.dataTables.min.js"></script>
-    <script src="assets/js/jspdf.min.js"></script>
-    <script src="assets/js/jspdf.plugin.autotable.min.js"></script>
-    <script src="assets/js/tableHTMLExport.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/dashboard-script.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.dataTable').DataTable();
-        });
-    </script>
-    <script>
-        $(".jsonExport").on("click", function () {
-          $(".dataTable").tableHTMLExport({ type: "json", filename: "sample.json",});
-        });
-        $(".csvExport").on("click", function () {
-          $(".dataTable").tableHTMLExport({ type: "csv", filename: "sample.csv" });
-        });
-        $(".pdfExport").on("click", function () {
-          $(".dataTable").tableHTMLExport({ type: "pdf", filename: "sample.pdf" });
-        });
-      </script>
 </body>
 </html>
